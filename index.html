@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Password</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <article class="contenedor-global">
+        <h1>Generador de Contraseñas</h1>
+        <div class="contenedor-resultado">
+            <textarea id="ResultadoClave"></textarea>
+        </div>
+        <div class="contenedor-ajustes">
+            <div class="ajustes">
+                <label for="">Cantidad de caracteres</label>
+                <input type="number" id="caracteresCantidad" min="8" max="20" value="8">
+            </div>
+            <div class="ajustes">
+                <label for="">Mayusculas</label>
+                <input type="checkbox" id="mayusculas" checked>
+            </div>
+            <div class="ajustes">
+                <label for="">Minusculas</label>
+                <input type="checkbox" id="minusculas" min="8" max="20" value="8">
+            </div>
+            <div class="ajustes">
+                <label for="">Numeros</label>
+                <input type="checkbox" id="numeros" min="8" max="20" value="8">
+            </div>
+            <div class="ajustes">
+                <label for="">Simbolos</label>
+                <input type="checkbox" id="simbolos" min="8" max="20" value="8">
+            </div>
+        </div>
+        <div class="botones">
+            <button class="btn btn-generate" id="generarBtn">
+                <i class="" ></i>Generar
+            </button>
+            <button class="btn " >
+                <i class="" ></i>Copiar
+            </button>
+        </div>
+    </article>
+
+    <script src="app.js"></script>
+</body>
+</html>
